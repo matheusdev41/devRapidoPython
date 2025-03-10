@@ -16,6 +16,7 @@ try:
     marca INTEGER NOT NULL,
     PRIMARY KEY(placa),
     FOREIGN KEY(proprietario) REFERENCES pessoa(cpf)
+    FOREIGN KEY(marca) REFERENCES marca(id)
     );'''
 
     cursor.execute(comando)
