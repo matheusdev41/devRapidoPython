@@ -11,22 +11,22 @@ pessoa2 = Pessoa(12345678918, 'Fernando', '1999-01-03', True)
 
 marca = Marca(1, 'BMW', 'bmw')
 
-#comando = '''
-#INSERT INTO pessoa (cpf, nome, nascimento, oculos)
-#VALUES (?, ?, ?, ?);'''
+comando = '''
+INSERT INTO pessoa (cpf, nome, nascimento, oculos)
+VALUES (?, ?, ?, ?);'''
 
 comando2 = '''
 INSERT INTO marca (id, nome, sigla)
 VALUES (?, ?, ?)'''
 
-#cursor.execute(comando, (pessoa2.cpf,
-#                         pessoa2.nome,
-#                         pessoa2.data_nascimento,
-#                         pessoa2.usa_oculos))
+cursor.execute(comando, (pessoa.cpf,
+                         pessoa.nome,
+                         pessoa.data_nascimento,
+                        pessoa.usa_oculos))
 
-cursor.execute(comando2, (marca.id,
-                         marca.nome,
-                         marca.sigla))
+#cursor.execute(comando2, (marca.id,
+#                         marca.nome,
+#                         marca.sigla))
 
 conexao.commit()
 
