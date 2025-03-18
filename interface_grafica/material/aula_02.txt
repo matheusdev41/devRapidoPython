@@ -1,0 +1,18 @@
+frameworks e bibliotecas para gui
+
+Tkinter
+- Framework GUI padrão do python
+- Sintaxe simples
+- Ampla gama de widgets 
+- Amplamente documentado
+- Ideial para iniciantes 
+
+PyQt
+- Robusto para aplicações comerciais
+- Desenvolvimento de aplicações GUI complexas
+- Recursos avançados melhoram a performance
+
+Kivy
+- Desenvolvimento de aplicações multi-touch
+- Escrito em Python e Cython
+- Multiplataforma (windows, macOs, )

@@ -1,0 +1,26 @@
+O que é gui?
+
+- Interface Gráfica de Usuário (GUI)
+  permite interação visual entre o usuário 
+  e a aplicação.
+  
+- Importância: Falicita o uso e a a acessibilidade
+  do software
+			  			  
+Por que usar frameworks?
+- Suporte
+- Documentação
+- Reutilização de código
+- Agilidade
+- Manutenção
+
+Ferramentas para GUI
+
+- Não é "arrastar e soltar"
+- UI / UX
+
+- Diversas opções
+- Estudar os casos de uso
+- Integração GUI - Funcionalidades
+- Eventos e Callbacks
+
