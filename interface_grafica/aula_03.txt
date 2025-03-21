@@ -1,0 +1,20 @@
+Vantagens da GUIs
+- Interação Intuitiva
+- Abstração de Complexidade
+- Compatibilidade Multiplataforma
+
+Desafios e Desvantagens
+- Consumo de Recursos
+- Complexidade no Desenvolvimento
+- Garantir Segurança e Previsibilidade
+- Curva de aprendizado
+
+Implementação Efetica de GUIs
+- Analisar Necessidades do Projeto
+- Escolha do Framework
+- Design Centrado no Usuário
+
+Melhores Práticas
+- Testes e FeedBack do Usuário
+- Otimização de Desempenho
+- Segurança
