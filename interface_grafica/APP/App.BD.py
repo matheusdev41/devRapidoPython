@@ -46,14 +46,26 @@ class AppBD:
             
     def data_delete(self, codigo):
         try:
+            confirmation = input(f"Tem certeza que deseja excluir o produto com o codigo {codigo}? (s/n)")
+            if confirmation  != 's':
+                print("Exclusão cancelada.")
+                return
+            
             self.cur.execute(
-                '''DELETE FROM Produto WHERE id = %s;''',
-                (codigo)
+                '''DELETE FROM Produto WHERE codigo = %s;''',
+                (codigo,)
             )
             self.conn.commit()
             print("Exclusão realizada com sucesso")
         except (Exception, Error) as error:
             print("Erro ao excluir registro", error)
+    
+    def close_connection(self):
+        if self.cur:
+            self.cur.close()
+        if self.conn:
+            self.conn.close()
+        print("Conexão com Banco de Dados fechada.")
             
 if __name__ == '__main__':
     app_bd = AppBD()
@@ -62,4 +74,5 @@ if __name__ == '__main__':
     for _ in range(20):
         nome = fake.word()
         preco = round(fake.random_number(digits=5) / 100, 2)
-        app_bd.data_insert(nome, preco)            
+        app_bd.data_insert(nome, preco)
+        app_bd.close_connection()            
