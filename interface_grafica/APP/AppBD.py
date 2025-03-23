@@ -33,7 +33,7 @@ class AppBD:
         except (Exception, Error) as error:
             print("Erro ao inserir dados", error)
     
-    def update_tables(self, codigo, nome, preco):
+    def data_update(self, codigo, nome, preco):
         try:
             self.cur.execute(
                 '''UPDATE Produto SET nome = %s, preco = %s WHERE codigo = %s;''',
